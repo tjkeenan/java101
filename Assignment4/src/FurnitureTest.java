@@ -5,10 +5,17 @@ public class FurnitureTest {
         int prompt = 0;
 
         while (prompt == 0) {
-            Order tableOrder = new Order();
-            System.out.println(tableOrder.toString());
-            prompt = JOptionPane.showConfirmDialog(null, "Get price for another table?");
+            Object typeWood = Order.getInputWoodType();
+            if (typeWood != null) {
+                Object typeSize = Order.getInputTableSize();
+                Order tableOrder = new Order(typeSize, typeWood);
+                System.out.println(tableOrder.toString());
+                prompt = JOptionPane.showConfirmDialog(null,
+                        "Get price for another table?");
+            } else {
+                System.out.println("You need wood!");
+                break;
+            }
         }
     }
 }
-
