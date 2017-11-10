@@ -1,33 +1,21 @@
+import javax.swing.*;
+
 public class Order {
-    private final String[] WOOD_TYPE = {"PINE", "OAK", "MAHOGANY"};
-    private final int[] WOOD_COST = {100, 224, 310};
-    private final String[] WOOD_SIZE = {"LARGE", "SMALL"};
     private Object tableType;
     private Object tableSize;
     private int tableCost = 0;
-    
 
-    public Object getTableType() {
-        return tableType;
+    public Object getInputWoodType() {
+        return JOptionPane.showInputDialog
+                (null, "Choose wood:", "Input",
+                        JOptionPane.INFORMATION_MESSAGE, null, WOOD_TYPE, WOOD_TYPE[0]);
     }
 
-    public void setTableType(Object tableType) {
-        this.tableType = tableType;
+    public Object getInputTableLarge() {
+        return JOptionPane.showInputDialog
+                (null, "Choose a table size:", "Input",
+                        JOptionPane.INFORMATION_MESSAGE, null, WOOD_SIZE, WOOD_SIZE[0]);
     }
 
-    public Object getTableSize() {
-        return tableSize;
-    }
 
-    public void setTableSize(Object tableSize) {
-        this.tableSize = tableSize;
-    }
-
-    public int getTableCost() {
-        return tableCost;
-    }
-
-    public void setTableCost(int tableCost) {
-        this.tableCost = tableCost;
-    }
 }
