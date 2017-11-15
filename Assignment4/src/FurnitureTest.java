@@ -14,8 +14,7 @@ public class FurnitureTest {
                 System.out.println(tableOrder.toString());
                 //Output to dialog
                 tableOrder.displayChoice();
-                prompt = JOptionPane.showConfirmDialog(null,
-                        "Get price for another table?", "Want more wood?", JOptionPane.YES_NO_OPTION);
+                prompt = JOptionPane.showConfirmDialog(null, "Get price for another table?", "Want more wood?", JOptionPane.YES_NO_OPTION);
             } else {
                 //Catch all if no wood is selected
                 System.out.println("You need wood!");
