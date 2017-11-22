@@ -50,7 +50,6 @@ public class Order {
                 this.toString(),"Enjoy your wood.", JOptionPane.DEFAULT_OPTION);
     }
 
-
     @Override
     public String toString() {
         if (tableSize == null) {

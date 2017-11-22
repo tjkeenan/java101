@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Assignment4b/Assignment4b.iml" filepath="$PROJECT_DIR$/Assignment4b/Assignment4b.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment5/Assignment5.iml" filepath="$PROJECT_DIR$/Assignment5/Assignment5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Constructors/Constructors.iml" filepath="$PROJECT_DIR$/Constructors/Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_BabySitters/Lab_BabySitters.iml" filepath="$PROJECT_DIR$/Lab_BabySitters/Lab_BabySitters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_BankBalance/Lab_BankBalance.iml" filepath="$PROJECT_DIR$/Lab_BankBalance/Lab_BankBalance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_CondoSales/Lab_CondoSales.iml" filepath="$PROJECT_DIR$/Lab_CondoSales/Lab_CondoSales.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_Insurance/Lab_Insurance.iml" filepath="$PROJECT_DIR$/Lab_Insurance/Lab_Insurance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_Lottery_Sales/Lab_Lottery_Sales.iml" filepath="$PROJECT_DIR$/Lab_Lottery_Sales/Lab_Lottery_Sales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_NamesLoop/Lab_NamesLoop.iml" filepath="$PROJECT_DIR$/Lab_NamesLoop/Lab_NamesLoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_RockPaperScissors/Lab_RockPaperScissors.iml" filepath="$PROJECT_DIR$/Lab_RockPaperScissors/Lab_RockPaperScissors.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab_Weather/Lab_Weather.iml" filepath="$PROJECT_DIR$/Lab_Weather/Lab_Weather.iml" />
       <module fileurl="file://$PROJECT_DIR$/Labtwo/Labtwo.iml" filepath="$PROJECT_DIR$/Labtwo/Labtwo.iml" />
