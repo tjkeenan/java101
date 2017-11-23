@@ -1,38 +1,8 @@
 import javax.swing.*;
 
 public class Pickers {
-
-    //input
-    //name
-    //# of boxes
-    //The number of boxes must be between 1 and 50 (inclusive).
-
-    //track
-    //box count
-    //picker count
-
-    //calc
-    //you'll need static variables!
-    //avg box count
-    //top box count
-    //top picker including ties
-
     //output
     //displayPickerReport() invoked by x for the input name
-
-/*  Required Output
-    Ham’s Blueberry Patch
-
-    Daily Summary
-
-
-    Number of pickers:  3
-
-    Total boxes:  32
-
-    Most productive picker:  John Smith
-
-    Average boxes picked:  10*/
 
     /* logic
     get name
@@ -44,9 +14,30 @@ public class Pickers {
     if tie do the same and append names
 */
 
-    int pickerCount, pickerTop, boxCount, boxAvg;
+    int pickerTop;
+    double boxCount;
     String pickerName;
+    static String pickerLeader;
     static int boxTotal;
+    static double boxTopCount = 0;
+    static double pickerCount = 0;
+    static double boxAvg;
+
+    public String getPickerLeader() {
+        return pickerLeader;
+    }
+
+    public void setPickerLeader(String pickerLeader) {
+        this.pickerLeader = pickerLeader;
+    }
+
+    public double getBoxTopCount() {
+        return boxTopCount;
+    }
+
+    public void setBoxTopCount(double boxTopCount) {
+        this.boxTopCount = boxTopCount;
+    }
 
     public int getBoxTotal() {
         return boxTotal;
@@ -60,58 +51,34 @@ public class Pickers {
         this.pickerName = pickerName;
     }
 
-    public String getPickerName() {
-        pickerName = JOptionPane.showInputDialog(null, "Name");
-        return pickerName;
-    }
-
-    public int getPickerCount() {
-        return pickerCount;
-    }
-
     public void setPickerCount(int pickerCount) {
-        this.pickerCount = pickerCount;
-    }
-
-    public int getPickerTop() {
-        return pickerTop;
-    }
-
-    public void setPickerTop(int pickerTop) {
-        this.pickerTop = pickerTop;
-    }
-
-    /*
-    public void setPickerTopName(String pickerTopName) {
-        this.pickerTopName = pickerTopName;
-    }*/
-
-    public int getBoxCount() {
-        return boxCount += boxCount;
+        this.pickerCount += pickerCount;
     }
 
     public void setBoxCount(int boxCount) {
+        boxAvg = (pickerCount / this.boxCount);
         this.boxCount = boxCount;
     }
 
-    public int getBoxAvg() {
-        return boxAvg;
-    }
-
     public void setBoxAvg(int boxAvg) {
-        this.boxAvg = boxAvg;
+        boxAvg = boxAvg;
     }
 
     @Override
     public String toString() {
-        return "\nName: " + this.pickerName
-                + "\nNumber of Boxes: " + this.boxTotal;
+        return "Ham's Blueberry Patch"
+                + System.lineSeparator()
+                + "\nNumber of pickers: " + this.pickerCount
+                + "\nTotal Boxes: " + this.boxTotal
+                + "\nMost productive picker: " + this.pickerLeader
+                + "\nAverage boxes picked: " + boxAvg;
     }
 
     //Convert String input to int
     public String inputValidator(String inputQuestion) {
         return JOptionPane.showInputDialog(null, inputQuestion);
     }
+
     public int intValidator(String inputQuestion) {
         return Integer.parseInt(JOptionPane.showInputDialog(null, inputQuestion));
     }
